@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio </title>
+  <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/43Sg1PT9/aminul.jpg">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- TAILWIND CSS LINK -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- CSS LINK HERE -->
+  <link rel="stylesheet" href="style.css">
+  <!-- DAISY UI LINK -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <!-- GOOGLE FONTS LINK -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- FONT AWESOME LINK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- jquery link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- wayponts link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+  <style>
+    .active {
+      border-bottom: 2px solid #3490dc;
+      /* Set the border bottom color for the active button */
+    }
+  </style>
+</head>
+
+<body class="bg-[#0d1324]">
+
+  <nav class="fixed top-0 w-full z-10 p-4 shadow-lg lg:bg-[#0b1222] sm:bg-[#0b1222] bg-[#0b1222]">
+    <div class="container mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <div class="text-white font-bold font-Roboto" data-aos="fade-right" data-aos-duration="1000">
+        <div class="text-xl font-extrabold text-white">
+          <code>&lt;</code>AMIN<span class="text-[#0284c7]">UL</span> <code>/></code>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Button (visible on small screens) -->
+      <div id="mobile-menu-btn" class="lg:hidden cursor-pointer">
+        <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/1000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </div>
+
+      <!-- Navigation Links (Hidden on Small Screens) -->
+      <div id="nav-links" class="hidden lg:flex justify-center items-center space-x-6 text-white" data-aos="fade-left"
+        data-aos-duration="1000">
+        <a href="#home" class="font-medium outline-none hover:outline-white p-1 text-white rounded">
+          <i class="fa-solid fa-house"></i>
+        </a>
+        <a href="#" class="font-medium p-1 text-white rounded outline-none hover:outline-white">Home</a>
+        <a href="#about" class="font-medium p-1 text-white rounded outline-none hover:outline-white">About</a>
+        <a href="#skills" class="font-medium p-1 text-white rounded outline-none hover:outline-white">Skills</a>
+        <a href="#projects" class="font-medium p-1 text-white rounded outline-none hover:outline-white">Projects</a>
+        <a href="#contact" class="font-medium p-1 text-white rounded outline-none hover:outline-white">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Mobile Menu (hidden by default) -->
+  <div id="mobile-menu" class="lg:hidden hidden pt-16 p-4 shadow-sm bg-[#0d1324] text-white" data-aos="fade-left"
+    data-aos-duration="1000">
+    <a href="#home" class="block font-bold text-white py-2 px-4 hover:bg-gray-700">Home</a>
+    <a href="#about" class="block font-bold text-white py-2 px-4 hover:bg-gray-700">About</a>
+    <a href="#skills" class="block font-bold text-white py-2 px-4 hover:bg-gray-700">Skills</a>
+    <a href="#projects" class="block font-bold text-white py-2 px-4 hover:bg-gray-700">Project</a>
+    <a href="#contact" class="block font-bold text-white py-2 px-4 hover:bg-gray-700">Contact</a>
+    <br>
+    <div class="flex justify-start items-center" data-aos="fade-left" data-aos-duration="1000">
+      <i class="fa-solid fa-magnifying-glass mx-3"></i>
+      <i class="fa-solid fa-cart-shopping"></i>
+      <button class="bg-[#ED7D31] rounded-sm px-3 p-1 font-bold text-white mx-3">
+        <a href="">Login</a>
+      </button>
+    </div>
+  </div>
+
+
+
+  <div class="bg-[#0d1324]">
+    <!-- HERO SECTION HERO-SECTION -->
+    <div class="container mx-auto lg:px-24 px-4  py-28">
+      <div class="lg:flex md:flex items-center justify-between gap-48">
+        <!-- Large devices (lg and xl) - Two sections side by side -->
+        <div class="lg:w-1/2 md:w-1/2 sm:w-full" data-aos="fade-right" data-aos-duration="1000">
+          <h2 class="text-white text-2xl mb-8 font-Roboto">Hi there, this is </h2>
+          <span
+            class="text-5xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl text-[#0284c7] font-extrabold font-Roboto mt-4">
+            Aminul Islam.
+          </span>
+          <h2
+            class="text-white text-3xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl mb-4 sm:mb-5 font-bold mt-4 sm:mt-8">
+            I'm <span class="auto-type text-[#299df2]"></span></h2>
+          <p class=" text-white text-md lg:w-10/12 w-full font-Roboto">
+            I am professional Web Designer with three years of experience. Now I am currently studying Computer Science
+            and Engineering at Dhaka International University.</p>
+          <br>
+          <button
+            class="text-white p-2 border font-Roboto font-bold active:bg-[] active:text-black cursor-pointer bg-[#0284c7] border-[#0284c7] border-2 ">
+            <a href="https://www.linkedin.com/in/aminulislamcse/">Hire
+              Me</a>
+          </button>
+          <button
+            class="text-white p-2 border font-Roboto font-bold active:bg-[] active:text-black cursor-pointer border-[#0284c7] border-2 hover:bg-[#0284c7]">
+            <a href="media/resume of Aminul.pdf" download>Get
+              Resume</a>
+          </button>
+        </div>
+        <div class="lg:w-1/2 md:w-1/2 sm:w-full my-4 lg:float-right md:float-right">
+          <div class="animate-float py-8">
+            <img src="https://i.postimg.cc/xjMLm4JS/banner-img.png" alt="Add Your Image"
+              class="text-white max-w-full w-full" data-aos="fade-left" data-aos-duration="1000" />
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ABOUT SECTION HERE -->
+  <div class="bg-[#0d1324]">
+    <div class="container mx-auto my-12 lg:px-24 px-4 py-8" id="about">
+      <div class="lg:flex items-center justify-between">
+        <div class="sm:w-full md:w-1/2 lg:w-1/2 lg:mt-0 -mt-12" data-aos="fade-up" data-aos-duration="1000">
+          <img src="https://i.postimg.cc/0ycYQK6M/ban-1.png" class="shadow-lg bg-[#15283f] rounded-2xl lg:w-10/12 w-ful"
+            alt="image here">
+        </div>
+        <div class="w-full lg-w-1/2 md:w-1/2 sm:w-full" data-aos="fade-up" data-aos-duration="1000">
+          <div class="flex items-start justify-start">
+            <div class="text-3xl text-white font-extrabold text-center lg:text-center lg:my-4 mt-12">
+              <span>About Me</span>
+              <img src="media/shape.png" alt="">
+            </div>
+          </div>
+          <br>
+          <div class="w-full sm:w-full text-[1.1rem] text-slate-300 text-justify font-Roboto">
+            I completed Diploma in Engineering from Tangail Polytechnic Institute in 2023 from Department of Computer
+            Science and Engineering. For two long years I have been working on web design with great skill and focus.
+            <br>
+            <details class="mb-4">
+              <summary class="cursor-pointer outline-none user-select-none p-1 bg-[] text-white rounded-md">Read More
+              </summary>
+              <span class="p-2 border border-gray-300 rounded-md block">
+                I am working with various framework technologies including HTML, CSS, BOOTSTRAP,TAILWIND
+                CSS, SASS, JAVASCRIPT, JQUERY and Daisy UI. And I have created hundreds of projects using these
+                technologies. .Besides, I can convert from FIGMA-HTML, PSD-HTML, ADOBE XD-HTML to responsive website.
+                Besides, we can design any type of website efficiently and creatively in a responsive manner according
+                to
+                the customer's wishes.
+                <br>
+                Also can do GitHub, Git, Netlify, Vercel and advance Internet web browsing as other tools.
+                Can design graphics with Adobe Photoshop, Adobe Illustrator, Canva etc.
+              </span>
+            </details>
+            <br>
+            <div class="main-div lg:-mx-[55px] mx- flex items-start justify-around	">
+              <div class="icons">
+                <i class="fa-solid fa-user text-md text-[#0284c7]"></i> Name
+                <br>
+                <i class="fa-solid fa-phone text-md text-[#0284c7]"></i> Phone
+                <br>
+                <i class="fa-solid fa-envelope text-md text-[#0284c7]"></i> Email
+                <br>
+                <i class="fa-brands fa-linkedin text-md text-[#0284c7]"></i> Linkedin
+                <br>
+                <i class="fa-brands fa-github text-md text-[#0284c7]"></i> Github
+              </div>
+              <div class="colon">
+                : <br>
+                : <br>
+                : <br>
+                : <br>
+                :
+              </div>
+              <div class="info">
+                Aminul Islam <br>
+                <a href="tel:+8801328834470">+8801328834470</a><br>
+                <a href="mailto:aminul.cse.tpi@gmail.com"> aminul.cse.tpi@gmail.com</a> <br>
+                <a href="https://tinyurl.com/aminulcse"> https://tinyurl.com/aminulcse</a> <br>
+                <a href="https://tinyurl.com/aminultpi"> http://tinyurl.com/aminultpicse</a>
+              </div>
+            </div>
+            <br>
+
+          </div>
+          <div class="mx-0">
+            <div class="font-bold text-lg text-white">My Interest</div>
+            <div class="flex flex-wrap text-white">
+              <div class="flex items-center">
+                <i class="fa-solid fa-code mx-0 text-[#0284c7] text-xl"></i> <span class="mx-2">Coding</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fa-solid fa-headphones-simple ms-12 text-[#0284c7] text-xl"></i><span
+                  class="mx-2">Music</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fa-solid fa-car ms-12 text-[#0284c7] text-xl"></i> <span class="mx-2">Travel</span>
+              </div>
+              <div class="flex items-center -mx-12">
+                <i class="fa-solid fa-bed ms-12 text-[#0284c7] text-xl"></i> <span class="mx-2">Sleeping</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- educational qualificatoin -->
+  <div class="bg-[#0d1324]">
+    <div class="container mx-auto my-12 lg:px-24 px-4 py-" id="about" data-aos="fade-up" data-aos-duration="1000">
+      <div class="flex items-center justify-center">
+        <div class="text-3xl text-white font-extrabold text-center lg:text-center lg:my-4 mt-12">
+          <span>Educational Qualification </span>
+          <img src="media/shape.png" width="200px" alt="">
+        </div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 py-8">
+        <div class="shadow-2xl w-full flex flex-wrap items-center justify-center bg-gray-700 p-4 rounded-xl">
+          <div>
+            <img src="https://i.postimg.cc/v837gfpL/Picture2.png" width="100px" alt="image here">
+          </div>
+          <div class="part text-white text-center justify-center items-center mx-4">
+            <div class="text-md font-bold">B.SC IN ENGINEERING</div>
+            <div class="text-xl font-bold text-[#00b0f0] ">Dhaka International University</div>
+            <div class="text-md font-semibold">Computer Science & Engineering</div>
+            <div class="text-md font-semibold">Waiting For Admission Result</div>
+          </div>
+        </div>
+        <div class="shadow-2xl w-full flex flex-wrap items-center justify-center bg-gray-700 p-4 rounded-xl">
+          <div>
+            <img src="https://i.postimg.cc/v837gfpL/Picture2.png" width="100px" alt="image here">
+          </div>
+          <div class="part text-white text-center justify-center items-center mx-4">
+            <div class="text-md font-bold">DIPLOMA IN ENGINEERING</div>
+            <div class="text-xl font-bold text-[#00b0f0] ">Tangail Polytechnic Institute</div>
+            <div class="text-md font-semibold">Computer Technology</div>
+            <div class="text-md font-semibold">Passing Year: 2023</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- SKILLS SECTION HERE -->
+  <div class="bg-[#0d1324]">
+    <div class="container mx-auto lg:px-24 px-4 py-2" id="skills" data-aos="fade-up" data-aos-duration="1000">
+      <div class="flex items-center justify-center">
+        <div class="text-3xl text-white font-extrabold text-center lg:text-center lg:my-4 mt-12">
+          <span>My Skills </span>
+          <img src="media/shape.png" width="200px" alt="">
+        </div>
+      </div>
+      <div class="lg:flex gap-8 ">
+        <div class="lg:w-1/2 lg:pr-4 pt-4">
+          <div class="text-md py-2 text-white font-bold ">
+            Coding Skills
+          </div>
+          <div class="border rounded shadow-lg p-4">
+            <div class="blocks">
+              <div class="flex justify-between text-white text-sm py-2">
+                <span>HTML</span>
+                <span class="percentage"><span class="small">98</span>%</span>
+              </div>
+              <div class="border-solid bg-slate-100 rounded-lg p-1">
+                <div class="h-2 bg-[#0a2647] rounded-lg border-white animate-progress html-progress">
+                </div>
+              </div>
+            </div>
+            <div class="blocks">
+              <div class="flex justify-between text-white text-sm py-2">
+                <span>CSS</span>
+                <span class="percentage"><span class="small">90</span>%</span>
+              </div>
+              <div class="border-solid bg-slate-100 rounded-lg p-1">
+                <div class="h-2 bg-[#0a2647] rounded-lg border-white animate-progress css-progress">
+                </div>
+              </div>
+            </div>
+            <div class="blocks">
+              <div class="flex justify-between text-white text-sm py-2">
+                <span>JQUERY</span>
+                <span class="percentage"><span class="small">70</span>%</span>
+              </div>
+              <div class="border-solid bg-slate-100 rounded-lg p-1">
+                <div class="h-2 bg-[#0a2647] rounded-lg border-white animate-progress jquery-progress">
+                </div>
+              </div>
+            </div>
+            <div class="blocks">
+              <div class="flex justify-between text-white text-sm py-2">
+                <span>JAVASCRIPT</span>
+                <span class="percentage"><span class="small">60</span>%</span>
+              </div>
+              <div class="border-solid bg-slate-100 rounded-lg p-1">
+                <div class="h-2 bg-[#0a2647] rounded-lg border-white animate-progress javascript-progress">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ----------------***********---------------------- -->
+        <div class="lg:w-1/2 lg:pr-4 pt-4">
+          <div class="text-md py-2 text-white font-bold ">
+            Professional Skills
+          </div>
+          <div class="border rounded shadow-lg p-4">
+            <div class="blocks">
+              <div class="flex justify-between text-white text-sm py-2">
+                <span>Web Design</span>
+                <span><span class="small">95</span>%</span>
+              </div>
+              <div class="border-solid bg-slate-100 rounded-lg p-1">
+                <div class="h-2 bg-[#0a2647] rounded-lg border-white animate-progress web-design-progress w-11/12 ">
+                </div>
+              </div>
+            </div>
+            <div class="blocks">
+              <div class="flex justify-between text-white text-sm py-2">
+                <span>WordPress</span>
+                <span><span class="small">20</span>%</span>
+              </div>
+              <div class="border-solid bg-slate-100 rounded-lg p-1">
+                <div class="h-2 bg-[#0a2647] rounded-lg border-white animate-progress wordpress-progress lg:w-3/6">
+                </div>
+              </div>
+            </div>
+            <div class="blocks">
+              <div class="flex justify-between text-white text-sm py-2">
+                <span>Adobe Photoshop</span>
+                <span><span class="small">40</span>%</span>
+              </div>
+              <div class="border-solid bg-slate-100 rounded-lg p-1">
+                <div class="h-2 bg-[#0a2647] rounded-lg border-white animate-progress photoshop-progress w-80">
+                </div>
+              </div>
+            </div>
+            <div class="blocks">
+              <div class="flex justify-between text-white text-sm py-2">
+                <span>Adobe Illustrator</span>
+                <span><span class="small">70</span>%</span>
+              </div>
+              <div class="border-solid bg-slate-100 rounded-lg p-1">
+                <div class="h-2 bg-[#0a2647] rounded-lg border-white animate-progress illustrator-progress w-60">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- counter section  -->
+  <div class="bg-[#0d1324]">
+    <div class="container mx-auto lg:px-24 p-4 pt-4" id="skills" data-aos="fade-up" data-aos-duration="1000">
+      <div class="flex items-center justify-center">
+        <div class="text-3xl text-white font-extrabold text-center lg:text-center lg:my-4 mt-12">
+          <span>Facts </span>
+          <div class="text-sm text-white">
+            Some facts about my work
+          </div>
+          <img src="media/shape.png" width="200px" alt="">
+        </div>
+      </div>
+      <br>
+      <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-4 text-white py-8">
+        <div class="card text-center bg-[#0d1324] border-2 border-[#21293b] shadow-2xl hover:shadow-md  p-8">
+          <div class="text-2xl "><span class="small">3</span>+</div>
+          <div class="text-md">Year Of Experience</div>
+        </div>
+        <div class="card text-center bg-[#0e1628] border-2 border-[#21293b] shadow-2xl hover:shadow-md  p-8">
+          <div class="text-2xl"><span class="small">150</span>+</div>
+          <div class="text-md">Project Done</div>
+        </div>
+        <div class="card text-center bg-[#0e1628] border-2 border-[#21293b] shadow-2xl hover:shadow-md  p-8">
+          <div class="text-2xl"><span class="small">100</span>%</div>
+          <div class="text-md">Responsive Project</div>
+        </div>
+        <div class="card text-center bg-[#0d1324] border-2 border-[#21293b] shadow-2xl hover:shadow-md  p-8">
+          <div class="text-2xl"><span class="small">100</span>%</div>
+          <div class="text-md">User Friendly</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- PROJECET SECTION  -->
+  <div class="bg-[#0d1324] text-white" id="projects" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container mx-auto lg:px- px-4 pt-0">
+      <div class="flex items-center justify-center">
+        <div class="text-3xl text-white font-extrabold text-center lg:text-center lg:my-4 mt-8">
+          <span class="text-sm text-[#0284c7]">My Portfolio </span> <br>
+          <span>Recent Works </span>
+          <img src="media/shape.png" width="200px" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="flex items-center justify-center">
+      <ul class="flex flex-wrap sm:flex-wrap p-4">
+        <li class="mb-2 sm:mr-6" onclick="setActive(1)" id="button1">
+          <a href="javascript:void(0)" onclick="openTab(event, 'tab1')"
+            class="active:border-none border-b-4 border-slate-200 text-[#0284c7]">All Projects</a>
+        </li>
+        <li class="mb-2 sm:mr-6 mx-2 mx-5">
+          <a href="javascript:void(0)" onclick="openTab(event, 'tab2')" onclick="setActive(2)" id="button2"
+            class="">E-Commerce</a>
+        </li>
+        <li class="mb-2 sm:mr-6 mx-5">
+          <a href="javascript:void(0)" onclick="openTab(event, 'tab3')" onclick="setActive(3)" id="button3"
+            class="">Hospital</a>
+        </li>
+        <li class="mb-2 sm:mr-6">
+          <a href="javascript:void(0)" onclick="openTab(event, 'tab4')" onclick="setActive(4)" id="button4"
+            class="">School</a>
+        </li>
+        <li class="mb-2 mx-5">
+          <a href="javascript:void(0)" onclick="openTab(event, 'tab5')" onclick="setActive(5)" id="button5"
+            class="">Others</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Tab Content 1 -->
+    <div id="tab1" class="tabcontent">
+      <div class="container mx-auto lg:px-24 px-4 py-2">
+
+        <br>
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4 gap-4">
+          <!-- Card 1 -->
+          <div
+            class="flex items-center card relative overflow-hidden border-solid border-2 border-slate-200 hover:shadow-lg transition-transform duration-300 transform w-80 h-60 w-full">
+            <div
+              class="overlay absolute inset-0 flex items-center justify-center flex-col text-white bg-[#10addb] bg-opacity-90 opacity-0 hover:opacity-100 transition ease-in delay-75">
+              <p class="font-semibold">Health Heaven Hospital</p>
+              <p class="font-semibold">For Full HD</p>
+              <p class="bg-[#0a2647] p-1 rounded font-bold active:bg-black text-sm"> <a
+                  href="https://health-heaven-hospital.netlify.app/" target="_blank">View Demo</a></p>
+            </div>
+            <div class="object-cover">
+              <img src="https://i.postimg.cc/8PDMpnJy/card-1.jpg" class="w-80 h-60 w-full" alt="">
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="flex items-center card relative overflow-hidden border-solid border-2 border-slate-200 hover:shadow-lg transition-transform duration-300 transform w-80 h-60 w-full">
+            <div
+              class="overlay absolute inset-0 flex items-center justify-center flex-col text-white bg-[#10addb] bg-opacity-90 opacity-0 hover:opacity-100 transition ease-in delay-75">
+              <p class="font-semibold">Sun Valley Beauty</p>
+              <p class="font-semibold">For Full HD</p>
+              <p class="bg-[#0a2647] p-1 rounded font-bold active:bg-black text-sm"> <a
+                  href="https://sun-valley-beauty.netlify.app/">View Demo</a></p>
+            </div>
+            <div class="object-cover">
+              <img src="https://i.postimg.cc/sgGVt3jb/card-2.jpg" class="w-80 h-60 w-full" alt="">
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="flex items-center card relative overflow-hidden border-solid border-2 border-slate-200 hover:shadow-lg transition-transform duration-300 transform w-80 h-60 w-full">
+            <div
+              class="overlay absolute inset-0 flex items-center justify-center flex-col text-white bg-[#10addb] bg-opacity-90 opacity-0 hover:opacity-100 transition ease-in delay-75">
+              <p class="font-semibold">E-Learning BD</p>
+              <p class="font-semibold">For Full HD</p>
+              <p class="bg-[#0a2647] p-1 rounded font-bold active:bg-black text-sm"> <a
+                  href="https://e-learning-edu.netlify.app/">View Demo</a></p>
+            </div>
+            <div class="object-cover">
+              <img src="https://i.postimg.cc/Nf5YHQHL/school.jpg" class="w-80 h-60 w-full" alt="">
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="flex items-center card relative overflow-hidden border-solid border-2 border-slate-200 hover:shadow-lg transition-transform duration-300 transform w-80 h-60 w-full">
+            <div
+              class="overlay absolute inset-0 flex items-center justify-center flex-col text-white bg-[#10addb] bg-opacity-90 opacity-0 hover:opacity-100 transition ease-in delay-75">
+              <p class="font-semibold">Furnit Bd</p>
+              <p class="font-semibold">For Full HD</p>
+              <p class="bg-[#0a2647] p-1 rounded font-bold active:bg-black text-sm"> <a
+                  href="https://furnit-bd.netlify.app/">View Demo</a></p>
+            </div>
+            <div class="object-cover">
+              <img src="https://i.postimg.cc/4ynCV1nj/furnit.jpg" class="w-80 h-60 w-full" alt="">
+            </div>
+          </div>
+          <!-- card 5 -->
+          <div
+            class="flex items-center card relative overflow-hidden border-solid border-2 border-slate-200 hover:shadow-lg transition-transform duration-300 transform w-80 h-60 w-full">
+            <div
+              class="overlay absolute inset-0 flex items-center justify-center flex-col text-white bg-[#10addb] bg-opacity-90 opacity-0 hover:opacity-100 transition ease-in delay-75">
+              <p class="font-semibold">Influencer Main </p>
+              <p class="font-semibold">For Full HD</p>
+              <p class="bg-[#0a2647] p-1 rounded font-bold active:bg-black text-sm"> <a
+                  href="https://influencer-main.netlify.app/" target="_blank">View Demo</a></p>
+            </div>
+            <div class="object-cover">
+              <img src="https://i.postimg.cc/wMnrJ8Cs/card-5.jpg" class="w-80 h-60 w-full" alt="">
+            </div>
+          </div>
+          <!-- card 6 -->
+          <div
+            class="flex items-center card relative overflow-hidden border-solid border-2 border-slate-200 hover:shadow-lg transition-transform duration-300 transform w-80 h-60  w-full">
+            <div
+              class="overlay absolute inset-0 flex items-center justify-center flex-col text-white bg-[#10addb] bg-opacity-90 opacity-0 hover:opacity-100 transition ease-in delay-75">
+              <p class="font-semibold">E-Shop</p>
+              <p class="font-semibold">For Full HD</p>
+              <p class="bg-[#0a2647] p-1 rounded font-bold active:bg-black text-sm"> <a
+                  href="https://e-shop-bd-24.netlify.app/">View Demo</a></p>
+            </div>
+            <div class="object-cover">
+              <img src="https://i.postimg.cc/GtT7bg43/card-6.jpg" class="w-80 h-60 w-full" alt="">
+            </div>
+          </div>
+          <details>
+            <summary>Show More</summary>
+            <!-- CARD 7 -->
+            <div
+              class="flex items-center card relative overflow-hidden border-solid border-2 border-slate-200 hover:shadow-lg transition-transform duration-300 transform w-80 h-60 w-full">
+              <div
+                class="overlay absolute inset-0 flex items-center justify-center flex-col text-white bg-[#10addb] bg-opacity-90 opacity-0 hover:opacity-100 transition ease-in delay-75">
+                <p class="font-semibold">Penguin Fashion</p>
+                <p class="font-semibold">For Full HD</p>
+                <p class="bg-[#0a2647] p-1 rounded font-bold active:bg-black text-sm"> <a
+                    href="https://penguin-fashion-aminul.netlify.app/">View Demo</a></p>
+              </div>
+              <div class="object-cover">
+                <img src="https://i.postimg.cc/qRNVCLNS/penguin.jpg" class="w-80 h-60 w-full" alt="">
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- Tab Content 2 -->
+    <div id="tab2" class="tabcontent" style="display:none;">
+      <div class="container mx-auto lg:px-24 px-4 py-2">
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4 gap-8">
+          <!-- Card 1 -->
+          <div
+            class="flex items-center card relative overflow-hidden border-solid border-2 border-slate-200 hover:shadow-lg transition-transform duration-300 transform w-80 h-60 w-full">
+            <div
+              class="overlay absolute inset-0 flex items-center justify-center flex-col text-white bg-[#10addb] bg-opacity-90 opacity-0 hover:opacity-100 transition ease-in delay-75">
+              <p class="font-semibold">Influencer Website</p>
+              <p class="font-semibold">For Full HD</p>
+              <p class="bg-[#0a2647] p-1 rounded font-bold active:bg-black text-sm"> <a
+                  href="https://influencer-main.netlify.app/">View Demo</a></p>
+            </div>
+            <div class="object-cover">
+              <img src="https://i.postimg.cc/wMnrJ8Cs/card-5.jpg" class="w-80 h-60 w-full" alt="">
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="flex items-center card relative overflow-hidden border-solid border-2 border-slate-200 hover:shadow-lg transition-transform duration-300 transform w-80 h-60 w-full">
+            <div
+              class="overlay absolute inset-0 flex items-center justify-center flex-col text-white bg-[#10addb] bg-opacity-90 opacity-0 hover:opacity-100 transition ease-in delay-75">
+              <p class="font-semibold">E-Shop </p>
+              <p class="font-semibold">For Full HD</p>
+              <p class="bg-[#0a2647] p-1 rounded font-bold active:bg-black text-sm"> <a
+                  href="https://e-shop-bd-24.netlify.app/">View Demo</a></p>
+            </div>
+            <div class="object-cover">
+              <img src="https://i.postimg.cc/GtT7bg43/card-6.jpg" class="w-80 h-60 w-full" alt="">
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="flex items-center card relative overflow-hidden border-solid border-2 border-slate-200 hover:shadow-lg transition-transform duration-300 transform w-80 h-60 w-full">
+            <div
+              class="overlay absolute inset-0 flex items-center justify-center flex-col text-white bg-[#10addb] bg-opacity-90 opacity-0 hover:opacity-100 transition ease-in delay-75">
+              <p class="font-semibold">Furnit-Bd </p>
+              <p class="font-semibold">For Full HD</p>
+              <p class="bg-[#0a2647] p-1 rounded font-bold active:bg-black text-sm"> <a
+                  href="https://furnit-bd.netlify.app/">View Demo</a></p>
+            </div>
+            <div class="object-cover">
+              <img src="https://i.postimg.cc/4ynCV1nj/furnit.jpg" class="w-80 h-60 w-full" alt="">
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="flex items-center card relative overflow-hidden border-solid border-2 border-slate-200 hover:shadow-lg transition-transform duration-300 transform w-80 h-60  w-full">
+            <div
+              class="overlay absolute inset-0 flex items-center justify-center flex-col text-white bg-[#10addb] bg-opacity-90 opacity-0 hover:opacity-100 transition ease-in delay-75">
+              <p class="font-semibold">Groco</p>
+              <p class="font-semibold">For Full HD</p>
+              <p class="bg-[#0a2647] p-1 rounded font-bold active:bg-black text-sm"> <a
+                  href="https://grocery-main.netlify.app/">View Demo</a></p>
+            </div>
+            <div class="object-cover">
+              <img src="https://i.postimg.cc/sgMpqGZy/groco.jpg" class="w-80 h-60 w-full" alt="">
+            </div>
+          </div>
+          <!-- card 5 -->
+          <div
+            class="flex items-center card relative overflow-hidden border-solid border-2 border-slate-200 hover:shadow-lg transition-transform duration-300 transform w-80 h-60 w-full">
+            <div
+              class="overlay absolute inset-0 flex items-center justify-center flex-col text-white bg-[#10addb] bg-opacity-90 opacity-0 hover:opacity-100 transition ease-in delay-75">
+              <p class="font-semibold">Panda Mart</p>
+              <p class="font-semibold">For Full HD</p>
+              <p class="bg-[#0a2647] p-1 rounded font-bold active:bg-black text-sm"> <a
+                  href="https://panda-fashion-bd.netlify.app/">View Demo</a></p>
+            </div>
+            <div class="object-cover">
+              <img src="https://i.postimg.cc/rmMRVDzD/panda.jpg" class="w-80 h-60 w-full" alt="">
+            </div>
+          </div>
+
+          <!-- card 6 -->
+          <div
+            class="flex items-center card relative overflow-hidden border-solid border-2 border-slate-200 hover:shadow-lg transition-transform duration-300 transform w-80 h-60   w-full">
+            <div
+              class="overlay absolute inset-0 flex items-center justify-center flex-col text-white bg-[#10addb] bg-opacity-90 opacity-0 hover:opacity-100 transition ease-in delay-75">
+              <p class="font-semibold">Penguin Fashion </p>
+              <p class="font-semibold">For Full HD</p>
+              <p class="bg-[#0a2647] p-1 rounded font-bold active:bg-black text-sm"> <a
+                  href="https://penguin-fashion-aminul.netlify.app/">View Demo</a></p>
+            </div>
+            <div class="object-cover">
+              <img src="https://i.postimg.cc/qRNVCLNS/penguin.jpg" class="w-80 h-60 w-full" alt="">
+            </div>
+          </div>
+          <!-- card 7 -->
+          <div
+            class="flex items-center card relative overflow-hidden border-solid border-2 border-slate-200 hover:shadow-lg transition-transform duration-300 transform w-80 h-60   w-full">
+            <div
+              class="overlay absolute inset-0 flex items-center justify-center flex-col text-white bg-[#10addb] bg-opacity-90 opacity-0 hover:opacity-100 transition ease-in delay-75">
+              <p class="font-semibold">Red Store </p>
+              <p class="font-semibold">For Full HD</p>
+              <p class="bg-[#0a2647] p-1 rounded font-bold active:bg-black text-sm"> <a
+                  href="https://red-store-bd-24.netlify.app/" target="_blank">View Demo</a></p>
+            </div>
+            <div class="object-cover">
+              <img src="https://i.postimg.cc/fTGLWVrM/red-store.jpg" class="w-80 h-60 w-full" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab Content 3 -->
+    <div id="tab3" class="tabcontent" style="display: none;">
+      <div class="container mx-auto lg:px-24 px-4 py-2">
+        <br>
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4 gap-4">
+          <!-- Card 1 -->
+          <div
+            class="flex items-center card relative overflow-hidden border-solid border-2 border-slate-200 hover:shadow-lg transition-transform duration-300 transform w-80 h-60 w-full">
+            <div
+              class="overlay absolute inset-0 flex items-center justify-center flex-col text-white bg-[#10addb] bg-opacity-90 opacity-0 hover:opacity-100 transition ease-in delay-75">
+              <p class="font-semibold">Health Heaven Hospital</p>
+              <p class="font-semibold">For Full HD</p>
+              <p class="bg-[#0a2647] p-1 rounded font-bold active:bg-black text-sm"> <a
+                  href="https://health-heaven-hospital.netlify.app/" target="_blank">View Demo</a></p>
+            </div>
+            <div class="object-cover">
+              <img src="https://i.postimg.cc/8PDMpnJy/card-1.jpg" class="w-80 h-60 w-full" alt="">
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="flex items-center card relative overflow-hidden border-solid border-2 border-slate-200 hover:shadow-lg transition-transform duration-300 transform w-80 h-60 w-full">
+            <div
+              class="overlay absolute inset-0 flex items-center justify-center flex-col text-white bg-[#10addb] bg-opacity-90 opacity-0 hover:opacity-100 transition ease-in delay-75">
+              <p class="font-semibold">Holy Care Hospital</p>
+              <p class="font-semibold">For Full HD</p>
+              <p class="bg-[#0a2647] p-1 rounded font-bold active:bg-black text-sm"> <a
+                  href="https://holy-care-hospital.netlify.app/" target="_blank"">View Demo</a></p>
+                </div>
+                <div class=" object-cover">
+                  <img src="https://i.postimg.cc/J4V0MygM/holy-care.jpg" class="w-80 h-60 w-full" alt="">
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="flex items-center card relative overflow-hidden border-solid border-2 border-slate-200 hover:shadow-lg transition-transform duration-300 transform w-80 h-60 w-full">
+            <div
+              class="overlay absolute inset-0 flex items-center justify-center flex-col text-white bg-[#10addb] bg-opacity-90 opacity-0 hover:opacity-100 transition ease-in delay-75">
+              <p class="font-semibold">Life Care Hospital</p>
+              <p class="font-semibold">For Full HD</p>
+              <p class="bg-[#0a2647] p-1 rounded font-bold active:bg-black text-sm"> <a
+                  href="https://life-care-hopital.netlify.app/" target="_blank"">View Demo</a></p>
+                </div>
+                <div class=" object-cover">
+                  <img src="https://i.postimg.cc/VN6LDXSB/Life-Care.jpg" class="w-80 h-60 w-full" alt="">
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="flex items-center card relative overflow-hidden border-solid border-2 border-slate-200 hover:shadow-lg transition-transform duration-300 transform w-80 h-60   w-full">
+            <div
+              class="overlay absolute inset-0 flex items-center justify-center flex-col text-white bg-[#10addb] bg-opacity-90 opacity-0 hover:opacity-100 transition ease-in delay-75">
+              <p class="font-semibold">Life Care Hospital</p>
+              <p class="font-semibold">For Full HD</p>
+              <p class="bg-[#0a2647] p-1 rounded font-bold active:bg-black text-sm"> <a
+                  href="https://life-care-hopital.netlify.app/" target="_blank">View Demo</a></p>
+            </div>
+            <div class="object-cover">
+              <img src="https://i.postimg.cc/3wdYg76t/hospital-4.jpg" class="w-80 h-60 w-full" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Tab Content 4 -->
+    <div id="tab4" class="tabcontent" style="display:none;">
+      <div class="container mx-auto lg:px-24 px-4 py-2">
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 md:gap-4 gap-8">
+          <!-- Card 1 -->
+          <div
+            class="flex items-center card relative overflow-hidden border-solid border-2 border-slate-200 hover:shadow-lg transition-transform duration-300 transform w-80 h-60">
+            <div
+              class="overlay absolute inset-0 flex items-center justify-center flex-col text-white bg-[#10addb] bg-opacity-90 opacity-0 hover:opacity-100 transition ease-in delay-75">
+              <p class="font-semibold"> E-Learning</p>
+              <p class="font-semibold">For Full HD</p>
+              <p class="bg-[#0a2647] p-1 rounded font-bold active:bg-black text-sm"> <a
+                  href="https://e-learning-edu.netlify.app/">View Demo</a></p>
+            </div>
+            <div class="object-cover">
+              <img src="https://i.postimg.cc/Nf5YHQHL/school.jpg" class="w-80 h-60" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab Content 5 -->
+    <div id="tab5" class="tabcontent" style="display:none;">
+      <div class="container mx-auto lg:px-24 px-4 py-2">
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4 gap-8">
+          <!-- Card 1 -->
+          <div
+            class="flex items-center card relative overflow-hidden border-solid border-2 border-slate-200 hover:shadow-lg transition-transform duration-300 transform w-80 h-60 w-full">
+            <div
+              class="overlay absolute inset-0 flex items-center justify-center flex-col text-white bg-[#10addb] bg-opacity-90 opacity-0 hover:opacity-100 transition ease-in delay-75">
+              <p class="font-semibold">Weeding Valley </p>
+              <p class="font-semibold">For Full HD</p>
+              <p class="bg-[#0a2647] p-1 rounded font-bold active:bg-black text-sm"> <a
+                  href="https://conventional-center-new.netlify.app/">View Demo</a></p>
+            </div>
+            <div class="object-cover">
+              <img src="https://i.postimg.cc/0NJhkNh1/card-4.jpg" class="w-80 h-60 w-full" alt="">
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="flex items-center card relative overflow-hidden border-solid border-2 border-slate-200 hover:shadow-lg transition-transform duration-300 transform w-80 h-60 w-full">
+            <div
+              class="overlay absolute inset-0 flex items-center justify-center flex-col text-white bg-[#10addb] bg-opacity-90 opacity-0 hover:opacity-100 transition ease-in delay-75">
+              <p class="font-semibold">Safe Builder</p>
+              <p class="font-semibold">For Full HD</p>
+              <p class="bg-[#0a2647] p-1 rounded font-bold active:bg-black"> <a
+                  href="https://safe-build-aminul.netlify.app">View Demo</a></p>
+            </div>
+            <div class="object-cover">
+              <img src="https://i.postimg.cc/DyyDW6Rg/card-9.jpg" class="w-80 h-60 w-full" alt="">
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="flex items-center card relative overflow-hidden border-solid border-2 border-slate-200 hover:shadow-lg transition-transform duration-300 transform w-80 h-60 w-full">
+            <div
+              class="overlay absolute inset-0 flex items-center justify-center flex-col text-white bg-[#10addb] bg-opacity-90 opacity-0 hover:opacity-100 transition ease-in delay-75">
+              <p class="font-semibold">Card Slider</p>
+              <p class="font-semibold">For Full HD</p>
+              <p class="bg-[#0a2647] p-1 rounded font-bold active:bg-black text-sm"> <a
+                  href="https://card-slider-bd.netlify.app/">View Demo</a></p>
+            </div>
+            <div class="object-cover">
+              <img src="https://i.postimg.cc/wj1G2vqR/slider.jpg" class="w-80 h-60 w-full" alt="">
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="flex items-center card relative overflow-hidden border-solid border-2 border-slate-200 hover:shadow-lg transition-transform duration-300 transform w-80 h-60   w-full">
+            <div
+              class="overlay absolute inset-0 flex items-center justify-center flex-col text-white bg-[#10addb] bg-opacity-90 opacity-0 hover:opacity-100 transition ease-in delay-75">
+              <p class="font-semibold">Ict Division</p>
+              <p class="font-semibold">For Full HD</p>
+              <p class="bg-[#0a2647] p-1 rounded font-bold active:bg-black text-sm"> <a
+                  href="https://ict-division-creativecode-bd.netlify.app/">View Demo</a></p>
+            </div>
+            <div class="object-cover">
+              <img src="https://i.postimg.cc/HnS64GFt/ict.jpg" class="w-80 h-60 w-full" alt="">
+            </div>
+          </div>
+          <!-- card 5 -->
+          <div
+            class="flex items-center card relative overflow-hidden border-solid border-2 border-slate-200 hover:shadow-lg transition-transform duration-300 transform w-80 h-60   w-full">
+            <div
+              class="overlay absolute inset-0 flex items-center justify-center flex-col text-white bg-[#10addb] bg-opacity-90 opacity-0 hover:opacity-100 transition ease-in delay-75">
+              <p class="font-semibold">Pepsi Project</p>
+              <p class="font-semibold">For Full HD</p>
+              <p class="bg-[#0a2647] p-1 rounded font-bold active:bg-black text-sm"> <a
+                  href="https://pepsi-project-bd.netlify.app/">View Demo</a></p>
+            </div>
+            <div class="object-cover">
+              <img src="https://i.postimg.cc/XYBsFzLw/pepsi.jpg" class="w-80 h-60 w-full" alt="">
+            </div>
+          </div>
+          <!-- card 6 -->
+          <div
+            class="flex items-center card relative overflow-hidden border-solid border-2 border-slate-200 hover:shadow-lg transition-transform duration-300 transform w-80 h-60   w-full">
+            <div
+              class="overlay absolute inset-0 flex items-center justify-center flex-col text-white bg-[#10addb] bg-opacity-90 opacity-0 hover:opacity-100 transition ease-in delay-75">
+              <p class="font-semibold">Money Master </p>
+              <p class="font-semibold">For Full HD</p>
+              <p class="bg-[#0a2647] p-1 rounded font-bold active:bg-black text-sm"> <a
+                  href="https://money-master-creative.netlify.app/">View Demo</a></p>
+            </div>
+            <div class="object-cover">
+              <img src="https://i.postimg.cc/cHhh0y1N/money-master.jpg" class="w-80 h-60 w-full" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- have a project -->
+  <div class="bg-[#0d1324]">
+    <div class="container mx-auto lg:px-24 px-4 py-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between">
+        <div class="text-white text-center sm:text-left mb-4 sm:mb-0 sm:mr-4" data-aos="fade-right"
+          data-aos-duration="1000">
+          <div class="text-4xl font-extrabold">
+            Have a Project on Your Mind <span class="bg-[#0284c7] p-2 rounded"> !</span>
+          </div>
+          <div class="text-md lg:w-10/12 py-8 font-semibold sm:text-justify">
+            Share any kind of project idea with me. I will create a user-friendly, responsive, and attractive website
+            for you in a very short time.
+          </div>
+          <button type="button" onclick="submitForm()"
+            class="bg-[#0284c7] text-white text-lg text-extrabold py-2 px-4  active:bg-[#0a2647] active:text-white active:border-2 border-2 border-[#0d1324] cursor-pointer rounded-3xl">Contact
+            Me</button>
+        </div>
+        <div class="text-center animate-float">
+          <img class="mx-auto" src="media/idea_.png" alt="" data-aos="fade-left" data-aos-duration="1000">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- contact section here -->
+  <div class="bg-[#0d1324]" id="contact">
+    <br>
+    <div class="container mx-auto lg:px-24 px-4 py-2">
+      <div class="flex items-center justify-center lg:pt-12" data-aos="fade-up" data-aos-duration="1000">
+        <div class="text-3xl text-white font-extrabold text-center lg:text-center lg:my-4 pb-8 mt-8">
+          <span class="text-sm text-[#0284c7]">Contact Me </span> <br>
+          <span>Get In Touch </span>
+          <img src="media/shape.png" width="200px" alt="">
+        </div>
+      </div>
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pb-14" data-aos="fade-up"
+        data-aos-duration="1000">
+        <!-- Form Section -->
+        <form id="myForm" class="lg:w-10/12">
+          <div class="mb-4 flex flex-wrap">
+            <div class="w-full sm:w-1/2">
+              <input type="Name" id="name" name="name"
+                class="bg-transparent mt-1 p-2 w-full border  placeholder-white text-white text-sm" placeholder="Name"
+                required>
+            </div>
+            <div class="w-full sm:w-1/2 lg:pl-2">
+              <input type="email" id="email" name="email"
+                class="bg-transparent mt-1 p-2 w-full border  placeholder-white text-white text-sm" placeholder="Email"
+                required>
+            </div>
+          </div>
+          <div class="mb-4">
+            <input type="text" id="subject" name="subject"
+              class="bg-transparent mt-1 p-2 w-full border  placeholder-white text-white text-sm" placeholder="Subject">
+          </div>
+
+          <div class="mb-4">
+            <textarea id="message" name="message" rows="6"
+              class="bg-transparent mt-1 p-2 w-full border   text-sm focus:bg-transparent text-white placeholder-white"
+              placeholder="Message"></textarea>
+          </div>
+          <button type="button" onclick="submitForm()"
+            class="bg-[#0284c7] text-white text-lg text-extrabold py-2 px-4  active:bg-[#0a2647] active:text-white active:border-2 border-2 border-[#0d1324] cursor-pointer rounded-3xl">Send
+            Message</button>
+        </form>
+
+        <!-- Image Section -->
+        <div class="block lg:w-1/2 w-full text-white ms-2 my-4 py-2 lg:mt-[-70px]">
+          <div class="flex items-center justify-start">
+            <!-- Adding red background color to the icon -->
+            <i class="fa-solid fa-phone text-[#0a2647] bg-[#0284c7] p-2 rounded-3xl"></i>
+            <div class="block ms-8">
+              <div class="text-md font-medium">Call Me</div>
+              <div class="text-sm"><a href="tel:+8801319307170">+<span class="small">8801319307170</span></a></div>
+              <div class="text-sm"><a href="tel:+8801328834470">+<span class="small">8801328834470</span></a></div>
+            </div>
+          </div>
+          <div class="flex items-center justify-st py-3">
+            <i class="fa-solid fa-envelope bg-[#0284c7] rounded-3xl p-2 text-[#0a2647]"></i>
+            <div class="block ms-8">
+              <div class="text-md font-medium">Email</div>
+              <div class="text-sm"><a href="mailto:aminul.cse.tpi@gmail.com">aminul.cse.tpi@gmail.com</a></div>
+              <div class="text-sm"><a href="mailto:aminul.cse3@gmail.com">aminul.cse3@gmail.com</a></div>
+            </div>
+          </div>
+          <div class="flex items-center justify-start py-3">
+            <i class="fa-brands fa-linkedin bg-[#0284c7]  text-[#0a2647] rounded-3xl p-2"></i>
+            <div class="block ms-8">
+              <div class="text-md font-medium">Linkedin</div>
+              <div class="text-sm w-3 flex flex-wrap"><a
+                  href="https://www.linkedin.com/in/aminulislamcse/">https://shorturl.at/oTV56</a>
+              </div>
+              <div class="text-sm"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- popup here -->
+    <div id="popup"
+      class="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-50 hidden">
+      <div class="bg-white p-8 rounded-md shadow-lg">
+        <p class="text-lg font-bold text-gray-800">Thanks! Your response has been submitted.</p>
+        <button onclick="hidePopup()"
+          class="mt-4 bg-[#ffc000] text-[#0a2647] py-2 px-4 rounded-md active:bg-[#0a2647] active:text-white">Close</button>
+      </div>
+    </div>
+  </div>
+<!-- footer section -->
+  <footer class="bg-[#0b1222] text-white py-12">
+    <div class="container lg:px-10">
+      <div class="grid grid-cols-1  sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4  gap-8 p-4">
+        <!-- Contact Information -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Contact Me</h4>
+          <p>Lake City Concord</p>
+          <p>Khilkhet, Dhaka, Bangladesh</p>
+          <p><a href="mailto:Email: aminul.cse3@gmail.com">Email: aminul.cse3@gmail.com</a></p>
+          <p><a href="tel:01319307170">Phone: (+88) 01319307170</a></p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">project</a></li>
+            <li><a href="#skills">Skill</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Follow Me on</h4>
+          <div class="flex space-x-4">
+            <a href="https://www.facebook.com/profile.php?id=100007864486994"
+              class="text-white transform transition-transform hover:scale-125">
+              <i class="fab fa-facebook text-xl"></i>
+            </a>
+
+            <a href="https://twitter.com/i/aminuli16"
+              class="mx-3 text-white transform transition-transform hover:scale-125">
+              <i class="fab fa-twitter text-xl"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/aminulislamcse/"
+              class="mx-3 text-white transform transition-transform hover:scale-125">
+              <i class="fab fa-linkedin text-xl"></i>
+            </a>
+
+            <a href="https://www.instagram.com/aminul683/"
+              class="mx-3 text-white transform transition-transform hover:scale-125">
+              <i class="fab fa-instagram text-xl"></i>
+            </a>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Subscribe to Our Newsletter</h4>
+          <form action="#" method="" class="flex">
+            <input type="email" name="email" placeholder="Your email "
+              class="p-2 border rounded-l-md w-full text-black">
+            <button type="submit" class="bg-[#ed7d31] text-black p-2 rounded-r-md">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <hr>
+      <div class="text-center">
+        &copy; 2024 | Aminul Islam | all rights reserved
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- aos animation -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+  <!-- javascript link -->
+  <script src="app.js"></script>
+  <!-- TYPED JS -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <!-- DAISY UI -->
+  <script>
+// navigation bar clickable
+    document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+      var mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // auto type name
+    const typed = new Typed(".auto-type", {
+      strings: ['Front End Developer.', 'Web Designer.', 'Graphics Designer.'],
+      typeSpeed: 100,
+      backSpeed: 50,  // Corrected property name
+      loop: true       // Corrected property name
+    });
+
+    AOS.init();
+
+    // counter up
+    $(document).ready(function () {
+      $(".small").counterUp({
+        delay: 10,
+        time: 1200
+
+      });
+    });
+  </script>
+</body>
+
+</html>

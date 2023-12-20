@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar {
+
+  -webkit-appearance: none;
+  width: 15px;
+  background-color: #15283f;
+}
+
+.diff-resizer {
+  scale: 4;
+}
+
+
+
+::-webkit-scrollbar-thumb {
+
+  background-color:#0284c7;
+  border-radius: 10px;
+
+
+
+
+}
+
+@keyframes htmlAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 98%;
+  }
+}
+
+@keyframes cssAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes jqueryAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes javascriptAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+.html-progress {
+  animation: htmlAnimation 1.5s ease-out forwards;
+}
+
+.css-progress {
+  animation: cssAnimation 1.5s ease-out forwards;
+}
+
+.jquery-progress {
+  animation: jqueryAnimation 1.5s ease-out forwards;
+}
+
+.javascript-progress {
+  animation: javascriptAnimation 1.5s ease-out forwards;
+}
+
+
+/* PROFESSIONAL SKILL ANIMATION HERE  */
+@keyframes webDesignAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes wordpressAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+@keyframes photoshopAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes illustratorAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+.web-design-progress {
+  animation: webDesignAnimation 1.5s ease-out forwards;
+}
+
+.wordpress-progress {
+  animation: wordpressAnimation 1.5s ease-out forwards;
+}
+
+.photoshop-progress {
+  animation: photoshopAnimation 1.5s ease-out forwards;
+}
+
+.illustrator-progress {
+  animation: illustratorAnimation 1.5s ease-out forwards;
+}
+
+
+/*  IMAGE ANIMATION HERE */
+@keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Adding the animation class to trigger the animation */
+  @layer utilities {
+    .animate-float {
+      animation: float 2s ease-in-out infinite;
+    }
+  }
+  
